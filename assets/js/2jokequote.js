@@ -12,11 +12,15 @@ var showDadJoke = function() {
             return response.json();
         })
         .then(function(data) {
-            console.log(data);
-            console.log(data.body[0].setup);
-            console.log(data.body[0].punchline);
-            document.getElementById("jokeQ").append(data.body[0].setup);
-            document.getElementById("jokeA").append(data.body[0].punchline);
+            if (data.body[0].NSFW == false) {
+                console.log(data);
+                console.log(data.body[0].setup);
+                console.log(data.body[0].punchline);
+                document.getElementById("jokeQ").append(data.body[0].setup);
+                document.getElementById( "jokeA").append(data.body[0].punchline);
+            } else {
+                return showDadJoke();
+            }
         })
 }
 
@@ -24,26 +28,3 @@ $("#getJoke").click(function() {
     showDadJoke();
     $(".humor").empty();
 })
-
-
-// var showDadJoke = function() {
-//     var dadJokeUrl = "https://v2.jokeapi.dev/joke/Any";
-
-//     fetch(dadJokeUrl)
-//     .then(function(response) {
-//         return response.json();
-//     })
-//     .then(function(data) {
-//         console.log(data);
-//         console.log(data.setup);
-//         console.log(data.delivery);
-//         document.getElementById("jokeQ").append(data.setup);
-//         document.getElementById("jokeA").append(data.delivery);
-//     })
-// }
-
-
-// $("#getJoke").click(function() {
-//     showDadJoke();
-//     $(".humor").empty();
-// })
