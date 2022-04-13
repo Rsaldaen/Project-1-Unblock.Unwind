@@ -23,29 +23,47 @@
     </nav> 
   </header>
   <!-- this is for journalprompt -->
-  <section>
-    <div class="row journalprompt">
-      <div class="col s12 m5">
-        <div class="card-panel teal">
-          <span class="white-text">Write it Out!</span>
-          <span class="white-text">Here you can journal about your mood: OR use this prompt:
-            <!-- insert saved icon & prompt from array -->
-          </span>
+  <main class="yellow accent-1">
+    <!-- <section>
+      <div class="row journalprompt">
+        <div class="col s12 m5">
+          <div class="card-panel teal">
+            <span class="white-text">Write it Out!</span>
+            <span class="white-text">Here you can journal about your mood: OR use this prompt:
+              insert saved icon & prompt from array
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- this is for entering the journal text -->
-  <section>
-    <div class="row quote ">
-      <div class="col s12 m5">
-        <div class="card-panel teal">
-          <span class="white-text">This should be a text box</span>
+    </section> -->
+    <section>
+      <p class="flow-text center textPg3">Write it Out!</p>
+      <p class="flow-text center textPg3">Here you can journal about your mood:</p>
+      <!-- this is where to add the face icon -->
+      <div></div>
+      <p class="flow-text center textPg3">OR use this prompt:</p>
+      <!-- this is where to display random prompt -->
+      <div class="blue-text text-darken-3 center textPg3"></div>
+    </section>
+    <!-- this is for entering the journal text -->
+    <section>
+      <div class="row">
+        <div class="col s12 m10">
+          <div class="row"></div>
+            <div class="card-panel amber lighten-4 hoverable center z-depth-5 changeCard3 flow-text input-field">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="black-text text-darken-3 materialize-textarea">This should be a text box</textarea>
+            </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- this is for the Save button -->
+    <div class="button3"> 
+      <a class="waves-effect btn blue lighten-3 black-text text-darken-3 hoverable bt3" href="./4thankyou.html">Save</a>
+    </div>
+    
+  </main>
 
   <script src="./assets/js/3journal.js"></script>
 </body>
