@@ -1,18 +1,7 @@
-:root {
-    var --pink: #FFADAD;
-    var --orange: #FFD6A5;
-    var --yellow: #FDFFB6;
-    var --green: #CAFFBF;
-    var --lightblue: #9BF6FF;
-    var --blue: #A0C4FF;
-    var --purple: #BDB2FF;
-    var --mauve: #FFC6FF;
-    var --white: #FFFFFC;
-}
 *{
     font-family: 'Happy Monkey', cursive;
-    
 }
+
  #mood-check  {
       font-size: 25px;
       background-color: var(--blue);
@@ -31,53 +20,6 @@
 .myIcon {
 cursor: pointer;
 }
-/* css for page 2 */
-.changeCard2 {
-    min-height: 36vh;
-    min-width: 80vw;
-    margin: 3% 3% 0% 10%;
-}
-
-.jEntry {
-    font-size: 150%;
-    min-height: 7vh;
-}
-
-/* css for page 3 */
-.textPg3 {
-    font-size: 200%;
-    margin: 0%;
-    padding: 2%;
-}
-
-.changeCard3 {
-    min-height: 55vh;
-    min-width: 80vw;
-    margin: 3% 3% 0% 10%;
-}
-
-.button3 {
-    text-align: center;
-}
-
-.bt3 {
-    border: 2px solid darkblue;
-    border-radius: 2%;
-    margin: 1%;
-    opacity: 0.8;
-}
-
-.bt3:hover {
-    opacity: 1;
-} 
-
-
-
-
-
-
-
-
 
 /* css for page 2 */
 .changeCard2 {
@@ -102,10 +44,12 @@ cursor: pointer;
     min-height: 55vh;
     min-width: 80vw;
     margin: 3% 3% 0% 10%;
+    padding-bottom: 1%;
 }
 
 .button3 {
     text-align: center;
+    
 }
 
 .bt3 {
@@ -118,3 +62,9 @@ cursor: pointer;
 .bt3:hover {
     opacity: 1;
 } 
+
+.myTextArea {
+    height: 45vh;
+    width: 70vw;
+    margin-top: 2%;
+}
