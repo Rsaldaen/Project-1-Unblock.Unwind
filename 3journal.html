@@ -43,20 +43,26 @@
       <div class="row">
         <div class="col s12 m10">
             <div class="card-panel amber lighten-4 hoverable center z-depth-5 changeCard3 flow-text input-field">
-              <i class="material-icons prefix">mode_edit</i>
+              <div id="currentDate"></div>
+              <i id="iconPen" class="material-icons prefix">mode_edit</i>
               <textarea id="icon_prefix2" class="black-text text-darken-3 myTextArea" placeholder="Write down your mood here..."></textarea>
               <!-- this is for the Save button -->
-              <div class="button3"> 
-                <a class="waves-effect btn blue lighten-3 black-text text-darken-3 hoverable bt3" href="./4thankyou.html">Save</a>
+              <div id="saveButton" class="button3"> 
+                <a class="waves-effect btn blue lighten-3 black-text text-darken-3 hoverable bt3">Save</a>
               </div>
+              <p id="displayArea" class="amber lighten-4"></p>
             </div>
         </div>
       </div>
     </section>
-    
+  
+    <!-- this is for the date buttons -->
+    <div id="historyDates"></div>
+    <div class="buttonNext3"> 
+      <a class="waves-effect btn blue lighten-3 black-text text-darken-3 hoverable bt3" href="./4thankyou.html">Next</a>
+    </div>
   </main>
-
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/3journal.js"></script>
 </body>
 </html>
