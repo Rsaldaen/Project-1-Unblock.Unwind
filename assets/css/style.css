@@ -48,8 +48,7 @@ cursor: pointer;
 }
 
 .button3 {
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .bt3 {
@@ -63,8 +62,25 @@ cursor: pointer;
     opacity: 1;
 } 
 
+/* #journalTitle {
+    display: flexbox;
+} */
+
 .myTextArea {
-    height: 45vh;
+    height: 35vh;
     width: 70vw;
     margin-top: 2%;
+}
+
+#historyDates {
+    text-align: center;
+}
+
+.buttonNext3 {
+    text-align: right; 
+    margin-right: 2%;
+}
+
+button {
+    margin:5px;
 }
