@@ -30,6 +30,26 @@ $("#getJoke").click(function() {
     $(".humor").empty();
 })
 
+var quotearray = "https://type.fit/api/quotes";
+
+var showQuote = function() {
+    fetch(quotearray)
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      var randomquote = data[Math.floor(Math.random() * 1000)];
+      document.getElementById("motivate").append(randomquote.text);
+    }) 
+}
+showQuote();
+
+$("#getQuotes").click(function() {
+    showQuote();
+    $(".quotes").empty();
+})
+
+
 // this is for showing and hiding the joke and quote blocks
 var jokeBlock = document.querySelector('#jokeBlock');
 var quoteBlock = document.querySelector('#quoteBlock');
