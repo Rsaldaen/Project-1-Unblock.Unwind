@@ -23,8 +23,26 @@ var showDadJoke = function() {
             }
         })
 }
+showDadJoke();
 
 $("#getJoke").click(function() {
     showDadJoke();
     $(".humor").empty();
 })
+
+// this is for showing and hiding the joke and quote blocks
+var jokeBlock = document.querySelector('#jokeBlock');
+var quoteBlock = document.querySelector('#quoteBlock');
+
+function hideBlock(block) {
+    block.style.display = "none";
+}
+
+if (document.location.search === "?q=inspiration") {
+    hideBlock(jokeBlock); 
+} else if (document.location.search === "?q=humor") {
+    hideBlock(quoteBlock); 
+} else {
+    jokeBlock.style.display = "block";
+    quoteBlock.style.display = "block";
+}
