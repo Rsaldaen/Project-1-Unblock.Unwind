@@ -1,4 +1,3 @@
-
 var prompts = [
 " List 5 things you’re grateful for today. ",
 " What do you like most about your personality? ",
