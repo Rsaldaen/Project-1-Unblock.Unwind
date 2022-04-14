@@ -23,6 +23,7 @@ var showDadJoke = function() {
             }
         })
 }
+showDadJoke();
 
 $("#getJoke").click(function() {
     showDadJoke();
