@@ -1,7 +1,7 @@
 *{
     font-family: 'Happy Monkey', cursive;
+    
 }
-
  #mood-check  {
       font-size: 25px;
       background-color: var(--blue);
@@ -17,10 +17,10 @@
       width: 100%;
 
   }
-.myIcon {
+.myIcon1, .myIcon2, .myIcon3, .myIcon4 {
 cursor: pointer;
-}
 
+}
 /* css for page 2 */
 .changeCard2 {
     min-height: 36vh;
@@ -44,12 +44,10 @@ cursor: pointer;
     min-height: 55vh;
     min-width: 80vw;
     margin: 3% 3% 0% 10%;
-    padding-bottom: 1%;
 }
 
 .button3 {
     text-align: center;
-    
 }
 
 .bt3 {
@@ -63,8 +61,67 @@ cursor: pointer;
     opacity: 1;
 } 
 
+
+
+
 .myTextArea {
     height: 45vh;
     width: 70vw;
     margin-top: 2%;
 }
+
+
+
+/* for animated buttons on page 1 */
+.animated { 
+ 
+    background-repeat: no-repeat;
+    background-position: left top; 
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 4s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+ }
+ 
+ @-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+ } 
+ 
+ @keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ }
+ 
+ .bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+ }
+ .animated2 { 
+ 
+    background-repeat: no-repeat;
+    background-position: left top; 
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 8s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+ }
+
+ .bounce2 { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+ }
+
+ .icon:hover {
+     color: white;
+ }
+
+ i:focus {
+     background-color: red;
+ }
