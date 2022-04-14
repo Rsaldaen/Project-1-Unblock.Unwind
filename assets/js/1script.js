@@ -1,17 +1,23 @@
-// for fetch example
-// function getApi() {
+var sadIcon = document.querySelector(".myIcon1");
+var neutralIcon = document.querySelector(".myIcon2");
+var contentIcon = document.querySelector(".myIcon3");
+var happyIcon = document.querySelector(".myIcon4");
 
-    
-//     var requestUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&units=standard&exclude=hourly,minutely,alerts&appid=" + apiKey;
+
+sadIcon.addEventListener("click", function () {
+  localStorage.setItem('mood', 'sad')
   
-//     fetch(requestUrl)
-//       .then(function (response) {
-//         return response.json();
-//       })
-//       .then(function (data) {
-//        console.log(data);
-//       });
-//   }
-//  getApi();
+});
 
 
+neutralIcon.addEventListener("click", function() {
+  localStorage.setItem('mood' , 'neutral')
+});
+
+contentIcon.addEventListener("click", function() {
+  localStorage.setItem('mood', 'content')
+});
+
+happyIcon.addEventListener("click", function() {
+  localStorage.setItem('mood', 'happy')
+});
