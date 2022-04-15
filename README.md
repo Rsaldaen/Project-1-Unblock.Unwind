@@ -3,6 +3,8 @@
 ## Link 
 ### Please click [here](https://christinaa126.github.io/unblock-unwind/) to find the deployed project.
 
+### [Link to our project proposal](https://docs.google.com/document/d/1MIuaupkRZBL2KVFu757sjkKRt6N_Hg1nRohkY-aIJ9c/edit?usp=sharing) 
+
 ## Description
 
 This is an application that encourages software developers to take a break to cure their creative block and/or unwind from their current task. User will be able to select their daily mood and be given a random dad joke and motivational quote followed by the option to log a journal entry.
@@ -74,9 +76,7 @@ The following images demonstrate the web application's appearance and functional
 ![image of page2](./assets/images/page2.png)
 ![image of page3](./assets/images/page3.html.png)
 ![image of page4](./assets/images/page4.png)
+
 ---
 
 🏆  Code originally by team Brogrammers in 2022
-
-
-
