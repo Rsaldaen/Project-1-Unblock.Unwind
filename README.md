@@ -32,6 +32,7 @@ Here is a simple introduction of how to use our application:
     - Inspiration
 - Dependings on which buttons you selected, you will see a quote, a joke, or both
     - If you want to see more qutoes or jokes, you can click on the buttons for more
+    - Note: There is a 50 joke/day limit in our current API.
 - Click on the Journal Entry link to move to next page
 - Your selected emoji will be displayed again and you will also see a random prompt that you can journal about
 - Write down your journal and save it in the application
